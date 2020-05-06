@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>maze_challenge</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+    <script type="text/javascript" src="sketch.js"></script>
+    <script type="text/javascript" src="cell.js"></script>
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="maze-container" id="maze-container">
+        <!-- Maze container will go here -->
+      </div>
+      <div class="gui-container" id="gui-container">
+        <div class="title-container">
+          <h1><span>M</span>AZE <span>G</span>ENERATOR</h1>
+        </div>
+        <div class="maze-settings">
+          <ul>
+            <li>
+              <h2>Columns:</h2>
+              <input id="cols" type="text" value="10" onfocus="this.value=''" onfocusout="if (this.value == '') { this.value='10' }" onkeypress/>
+            </li>
+            <li>
+              <h2>Rows:</h2>
+              <input id="rows" type="text" value="10" onfocus="this.value=''" onfocusout="if (this.value == '') { this.value='10' }"/>
+            </li>
+          </ul>
+          <input id="rerun" type="button" value="Generate Maze" onclick="rerunMG();" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

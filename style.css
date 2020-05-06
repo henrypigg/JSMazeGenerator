@@ -1,0 +1,120 @@
+html, body {
+    /*background: linear-gradient(#108cf8, #0d7cde)*/
+    background-color: #0d7cde;
+}
+
+canvas {
+    border-radius: 16px;
+}
+
+.main {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 95%;
+    display: table;
+}
+
+.maze-container {
+    float: left;
+    margin: 1%;
+    padding: 1%;
+    background-color: white;
+    border-radius: 16px;
+    border: solid 2px white;
+    height: 95%;
+    display: table-cell;
+}
+
+.gui-container {
+    float: right;
+    margin: 1%;
+    border-radius: 16px;
+    height: 95%;
+    width: 40%;
+    background-color: white;
+    display: table-cell;
+}
+
+.gui-container h1 {
+    text-align: center;
+    height: 100%;
+    vertical-align: middle;
+    font-family: 'Ubuntu';
+    font-size: 36px;
+    color: #002842;
+    font-weight: 800;
+}
+
+.gui-container h1 span {
+    color: #0d7cde;
+    font-size: 48px;
+}
+
+.maze-settings ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+}
+
+.maze-settings ul li {
+    display: inline-table;
+    font-family: 'Ubuntu';
+    font-weight: 100px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.maze-settings ul li h2 {
+    display: table-cell;
+    text-align: right;
+    vertical-align: center;
+    padding: 0 16px 0 16px;
+}
+
+.maze-settings ul li input {
+    height: 40px;
+    width: 50px;
+    border-radius: 8px;
+    display: table-cell;
+    border: solid 2px #0d7cde;
+    font-size: 24px;
+    font-weight: 300;
+    color: #90b9dd;
+    padding: 0 16px 0 16px;
+
+}
+
+.maze-settings ul li input:focus {
+    background-color: white;
+    color: black;
+}
+
+.maze-settings #rerun {
+    height: 50px;
+    width: 94%;
+    background-color: white;
+    border-radius: 8px;
+    border: solid 2px #0d7cde;
+    font-size: 20px;
+    color: #0d7cde;
+    font-family: 'Ubuntu';
+    margin: 3%;
+}
+
+.maze-settings #rerun:hover {
+    background-color: #0d7cde;
+    color: white;
+    cursor: pointer;
+}
+
+.maze-settings #rerun:focus {
+    background-color: #0d7cde;
+    color: white;
+}
+
+
+canvas {
+    vertical-align: top;
+} 
